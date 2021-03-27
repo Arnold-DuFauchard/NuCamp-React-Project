@@ -42,7 +42,7 @@ class Main extends Component {
 
         const HomePage = () => {
             return (
-                <Home 
+                <Home
                     campsite={this.props.campsites.campsites.filter(campsite => campsite.featured)[0]}
                     campsitesLoading={this.props.campsites.isLoading}
                     campsitesErrMess={this.props.campsites.errMess}
@@ -56,7 +56,7 @@ class Main extends Component {
 
         const CampsiteWithId = ({match}) => {
             return(
-                <CampsiteInfo 
+                <CampsiteInfo
                     campsite={this.props.campsites.campsites.filter(campsite => campsite.id === +match.params.campsiteId)[0]}
                     isLoading={this.props.campsites.isLoading}
                     errMess={this.props.campsites.errMess}
